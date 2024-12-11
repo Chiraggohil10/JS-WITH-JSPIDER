@@ -9,7 +9,7 @@ console.log(image);
 image.src="https://i.pinimg.com/736x/d9/e1/04/d9e104948243f0f6551498112da0872a.jpg";
 image.alt="hii"
 image.style.height="200px"
-image.style.border="10px solid black"
+image.style.border="20px solid black"
 image.style.margin="20px 20px"
 
 
