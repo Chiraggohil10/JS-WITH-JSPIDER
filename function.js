@@ -57,7 +57,7 @@
 //     console.log(c);
 // })(10,20);
 
-// //function with expression
+// function with expression
 // let add=function(a,b) {
 //     let c=a+b;
 //     console.log(c);
@@ -82,14 +82,20 @@
 //  },8000)
 //  console.log("okk");
 
-// let add= (a,b) => {
+// or
+
+// function add(a,b) {
 //     return a+b;
 // }
-// function total(calc,x,y) {
-//     return calc(x,y);
+// function total(a,b) {
+//     return add(a,b)
 // }
-// let res = total(add,10,20);
+// let res=total(20,30)
 // console.log(res);
+
+
+
+
 
 
 //higher order function
@@ -105,6 +111,18 @@
 // let res = total(10,20,sub(30,20),add(20,30))
 // console.log(res);
 
+// or 
+
+// let add= (a,b) => {
+//     return a+b;
+// }
+// function total(add) {
+//     return add;
+// }
+// let res = total(add(10,20));
+// console.log(res);
+
+
 
 //first order function 
 // function add(a,b) {
@@ -112,6 +130,8 @@
 // }
 // let total=add(10,20)
 // console.log(total);
+
+
 
 //function with constructor
 // function emp(id,name,sal,hired) {
