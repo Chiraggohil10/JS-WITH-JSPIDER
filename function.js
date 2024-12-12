@@ -46,7 +46,6 @@
 
 
 //anonymous function
-
 // function(a,b) {
 //     let c=a+b;
 //     console.log(c);
@@ -77,17 +76,14 @@
 
 
 //callback function
- console.log("line number 1");
- setTimeout (() => {
-    console.log("line number 2");
- },8000)
- console.log("okk");
+//  console.log("line number 1");
+//  setTimeout (() => {
+//     console.log("line number 2");
+//  },8000)
+//  console.log("okk");
 
 // let add= (a,b) => {
 //     return a+b;
-// }
-// let mul= (a,b) => {
-//     return a*b;
 // }
 // function total(calc,x,y) {
 //     return calc(x,y);
@@ -97,13 +93,35 @@
 
 
 //higher order function
+// function add(a,b) {
+//    return a+b;
+// }
+// function sub(d,e) {
+//    return d-e;
+// }
+// function total(m,n,add,sub) {
+//    return m*n-add-sub;
+// }
+// let res = total(10,20,sub(30,20),add(20,30))
+// console.log(res);
 
-function add(a,b) {
-   return a+b;
-}
-function mul(a,b) {
-   return a*b;
-}
-function total() {
-   
-}
+
+//first order function 
+// function add(a,b) {
+//    return a+b;
+// }
+// let total=add(10,20)
+// console.log(total);
+
+//function with constructor
+// function emp(id,name,sal,hired) {
+//    this.id=id;
+//    this.name=name;
+//    this.sal=sal;
+//    this.hired=hired;
+// }
+// let e1=new emp(131,"Chirag",9099423494,"23-11-2018")
+// console.log(e1.name);
+
+
+
