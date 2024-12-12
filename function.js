@@ -7,7 +7,7 @@
 // //with perameterised function
 // function add(a,b) {
 //     let c=a+b;
-//     console.log(c);
+//     console.log(c);f
 // }
 // add(10,20);
 
