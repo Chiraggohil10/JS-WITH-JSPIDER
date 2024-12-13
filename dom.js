@@ -63,3 +63,19 @@ img[3].style.margin="20px 20px"
 let d=document.getElementsByName("division")
 console.log(d);
 d[0].innerHTML="using name"
+
+let body = document.querySelector("body");
+body.style.transition="800ms"
+
+function changeMode() {
+    if (body.style.backgroundColor != "black") {
+        body.style.backgroundColor = "black"
+        body.style.color = "white"
+        img[0].style.border="20px solid red"
+    }
+    else{
+        body.style.backgroundColor = "white"
+        body.style.color = "black"
+        img[0].style.border="20px solid black"
+    }
+}

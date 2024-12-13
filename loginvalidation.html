@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 20px;
+            position: relative;
+            right: 27px;
+            top: 5px;
+        }
+        fieldset{
+            width: 300px;
+            padding: 20px;
+            border: 2px solid black;
+            text-align: center;
+        }
+
+        #pwd{
+            margin-left:25px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Login Page</legend>
+            <label for="">Username :</label>
+            <input id="uname" type="text">
+            <label for="">Password :</label>
+            <input id="pwd" type="password">
+            <img onclick="show()" src="https://cdn-icons-png.flaticon.com/512/2767/2767146.png" alt="">
+            <button onclick="login()">Login</button>
+        </fieldset>
+    </form>
+    <script src="loginvalidation.js"></script>
+</body>
+</html>
