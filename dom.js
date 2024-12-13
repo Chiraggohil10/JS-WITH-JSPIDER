@@ -65,7 +65,7 @@ console.log(d);
 d[0].innerHTML="using name"
 
 let body = document.querySelector("body");
-body.style.transition="800ms"
+body.style.transition="1500ms"
 
 function changeMode() {
     if (body.style.backgroundColor != "black") {
