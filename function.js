@@ -84,14 +84,15 @@
 
 // or
 
-// function add(a,b) {
-//     return a+b;
+// function add(a, b) {
+//     return a + b;
 // }
-// function total(a,b) {
-//     return add(a,b)
+// function total(a, b, add) {
+//     return add(a, b);
 // }
-// let res=total(20,30)
-// console.log(res);
+// let res = total(20, 30, add);
+// console.log(res); // Output: 50
+
 
 
 
