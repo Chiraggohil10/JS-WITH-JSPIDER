@@ -2,6 +2,7 @@ fetch('https://jsonplaceholder.typicode.com/photos')
     .then((res) => {
         res.json()
             .then((response) => {
+                console.log(response);
                 displayPhotos(response);
             })
             .catch((error) => {
