@@ -5,7 +5,22 @@ let pro=new Promise((res,err)=>{
         res.json()
         .then((resMessage)=>{
             console.log(resMessage);
-            let body=document.getElementById('jsp'); 
+            display(resMessage);
+        })
+        .catch((errMessage)=>{
+            console.log(errMessage);
+            
+        })
+    })
+    .catch((err)=>{
+        console.log(err);
+        
+    })
+})
+
+
+function display(resMessage) {
+    let body=document.getElementById('jsp'); 
             let container=document.createElement('div');
             container.style.display="grid";
             container.style.gridTemplateColumns="250px 250px 250px 250px";
@@ -28,14 +43,4 @@ let pro=new Promise((res,err)=>{
                 body.appendChild(container);
                 
             }
-        })
-        .catch((errMessage)=>{
-            console.log(errMessage);
-            
-        })
-    })
-    .catch((err)=>{
-        console.log(err);
-        
-    })
-})
+}
