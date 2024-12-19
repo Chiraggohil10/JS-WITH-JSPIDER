@@ -60,23 +60,23 @@ let cart = [
   {
     id: 21,
     name: "bike",
-    price: 3200,
+    price: 3200
   },
   {
     id: 23,
     name: "car",
-    price: 3200,
+    price: 3200
   },
   {
     id: 25,
     name: "cycle",
-    price: 2900,
+    price: 2900
   },
   {
     id: 1,
     name: "truck",
-    price: 2700,
-  },
+    price: 2700
+  }
 ];
 // for (let i = 0; i <= cart.length-1; i++) {
 //     console.log(cart[i].name);    

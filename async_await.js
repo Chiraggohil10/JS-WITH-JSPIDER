@@ -3,4 +3,4 @@ async function fetchdata() {
     let response = await res.json();
     console.log(response);
 }
-fetchdata()
+fetchdata();

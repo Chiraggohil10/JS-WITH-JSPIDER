@@ -1,3 +1,10 @@
+// async function fetchdata() {
+//     let res = await fetch('https://jsonplaceholder.typicode.com/photos')
+//     let response = await res.json();
+//     displayPhotos(response);
+// }
+// fetchdata();
+
 fetch('https://jsonplaceholder.typicode.com/photos')
     .then((res) => {
         res.json()
