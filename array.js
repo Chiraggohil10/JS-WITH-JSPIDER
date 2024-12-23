@@ -98,16 +98,17 @@ let cart = [
 // })
 // console.log(newp);
 
-// let newp = cart.reduce((sum,x)=>
-//     sum=sum + x.price,0
-// )
-// console.log(newp);
+let newp = cart.reduce((sum, x) => {
+   return sum + x.price;
+   }, 0); 
+console.log(newp);
 
 // let arr = [76,8,4,7,9,2]
 // let newsort = arr.sort((a,b)=>{
 //     // return a-b; // ase
 //     return b-a; // des
 // })
+
 // console.log(newsort);
 
 
