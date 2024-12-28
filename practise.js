@@ -123,8 +123,12 @@
 // })
 // console.log(hike);
 
-
-
+// let sal=[20000,30000,40000,50000];
+// let hike=sal.map((x)=>{
+//     // return x+x*10/100; //10% hike
+//     return x-x*10/100; // 10% decriese
+// })
+// console.log(hike);
 
 // let newcart=cart.reduce((sum,x)=>{
 //     return sum+x.price 
