@@ -166,9 +166,39 @@
 // })
 // console.log(newarr);
 
+// let arr=[2,6,3,8,4,9,1,5,7];
+// let a=arr.sort();
+// console.log(a);
+
+
+
 // let newcart=cart.sort((a,b)=>{
 //     // return a.price-b.price; //ascending order
 //     // return b.price-a.price; //descending order
 // })
 // console.log(newcart);
+
+
+
+// let res= "12"+"360"-false*18+true*10;
+// console.log(res);
+
+// let a = {
+//     name: "chirag",
+//     age: 22
+// };
+// console.log(a.name);
+// console.log(a["name"]);
+
+// let arr= [12,0,null,1];
+
+// let res = arr.filter((x)=>{
+//     return x;
+// })
+// console.log(res);
+
+
+// console.log(1<3>2);
+
+
 
