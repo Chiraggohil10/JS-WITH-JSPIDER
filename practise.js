@@ -189,6 +189,10 @@
 // };
 // console.log(a.name);
 // console.log(a["name"]);
+// console.log(a.age);
+// console.log(a["age"]);
+
+
 
 // let arr= [12,0,null,1];
 
@@ -200,5 +204,13 @@
 
 // console.log(1<3>2);
 
+
+// let a =30;
+// let b= "chirag";
+// let obj= {
+//     a,
+//     b
+// }
+// console.log(obj);
 
 
