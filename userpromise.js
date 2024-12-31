@@ -73,6 +73,7 @@ function displaydata(resMessage) {
         gender.textContent=`Gender: ${x.gender}`
         
         body.appendChild(container);
+        container.appendChild(data);
         data.appendChild(id)
         data.appendChild(head);
         data.appendChild(image);
@@ -85,7 +86,6 @@ function displaydata(resMessage) {
         data.appendChild(birthdate)
         data.appendChild(hair)
         data.appendChild(bgroup)
-        container.appendChild(data);
     });
 
 }

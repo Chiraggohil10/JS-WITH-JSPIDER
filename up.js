@@ -32,20 +32,18 @@ function display(resMessage) {
     container.style.gridTemplateColumns = "250px 250px 250px 250px";
     container.style.justifyContent = "space-evenly";
     
-    resMessage.products.map((product)=>{
+    resMessage.products.map((x)=>{
 
         let data = document.createElement('div');
         data.style.height = "300px";
         data.style.width = "250px";
 
         let head = document.createElement('h1');
-
-        let image = document.createElement('img');
-
-        head.innerHTML =product.title;
+        head.innerHTML =x.title;
         head.style.fontSize = "15px";
 
-        image.src = product.images[0];
+        let image = document.createElement('img');
+        image.src = x.images[0];
         image.style.height = "200px";
         image.style.width = "250px";
         image.style.border = "1px solid black";
