@@ -170,8 +170,6 @@
 // let a=arr.sort();
 // console.log(a);
 
-
-
 // let newcart=cart.sort((a,b)=>{
 //     // return a.price-b.price; //ascending order
 //     // return b.price-a.price; //descending order
@@ -188,30 +186,35 @@
 //     age: 22
 // };
 // console.log(a.name);
-// console.log(a["name"]);
-// console.log(a.age);
+// console.log(a["name"]); 
+// console.log(a.age); 
 // console.log(a["age"]);
 
 
 
 // let arr= [12,0,null,1];
-
 // let res = arr.filter((x)=>{
 //     return x;
 // })
 // console.log(res);
 
 
-// console.log(1<3>2);
+// console.log(1<3>2); //true //1<3=true //true>2=false //1>2=false
 
 
-// let a =30;
+// let a =30; 
 // let b= "chirag";
 // let obj= {
-//     a,
+//     a:40,
 //     b
 // }
 // console.log(obj);
+
+
+// let arr = [10,20,30,40];
+// arr.reduce((a,b)=>{
+//     console.log(a,b);
+// })
 
 
 
