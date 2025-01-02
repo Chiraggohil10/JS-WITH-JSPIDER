@@ -214,3 +214,44 @@
 // console.log(obj);
 
 
+
+//spread operator 
+// let cart = [
+// {
+//     id:1,
+//     name:"volvo",
+//     price:50000
+// },
+// {
+//     id:2,
+//     name:"shift",
+//     price:60000
+// }
+// ];
+
+// let newcart = cart.map((x)=>{
+//     return{
+//         ...x,
+//         discount:x.price*0.1,
+//         disprice:x.price+x.price*0.1
+//     }
+// })
+
+// console.log(newcart);
+
+
+//rest perameter
+// function avg(...x) {
+//     console.log(x);
+//     let average = x.reduce((a,b)=>{
+//         return a+b;
+//     },0)/x.length;
+    
+//     return average;
+// }
+
+// console.log(avg(1,2,3,4,5));
+// console.log(avg(1,2,3));
+
+
+
