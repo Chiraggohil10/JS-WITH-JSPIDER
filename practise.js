@@ -231,25 +231,22 @@
 
 // let newcart = cart.map((x)=>{
 //     return{
-//         ...x,
+//         ...x, //spread operator is used to quick copy all the key value pair of x
 //         discount:x.price*0.1,
 //         disprice:x.price+x.price*0.1
 //     }
 // })
-
 // console.log(newcart);
 
 
 //rest perameter
-// function avg(...x) {
+// function avg(...x) { // ...x is rest perameter
 //     console.log(x);
 //     let average = x.reduce((a,b)=>{
 //         return a+b;
 //     },0)/x.length;
-    
 //     return average;
 // }
-
 // console.log(avg(1,2,3,4,5));
 // console.log(avg(1,2,3));
 
