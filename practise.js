@@ -56,7 +56,7 @@
 // })
 
 
-// let newcart=cart.map((x)=>{  //map is used to traverse through every element of an array.x is the x start from 0
+// let newcart=cart.map((x)=>{  //map is used to traverse through every element of an array.x is the accumulator x start from 0
 //     // return {
 //     //     id:x.id,
 //     //     name:x.name,
