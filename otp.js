@@ -1,6 +1,6 @@
 function generateOTP() {
-    // Generate a random number between 1000 and 9999
-    let otp = Math.floor(100000+Math.random() * 9000); //
+    // Generate a random number between 100000 and 999999
+    let otp = Math.floor(100000+Math.random() * 900000);
     return otp;
 }
 
