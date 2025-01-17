@@ -18,8 +18,12 @@ console.log(str[0]);
 // let str1=str.replaceAll("a","C");
 // console.log(str1);
 
-// let str1=str.slice(0,4);
+// let str1=str.slice(0,4); //slice also accept nagetive index
 // console.log(str1);
+
+// let str1 = str.substring(0,4) 
+// console.log(str1);
+
 
 // let str2="lorem-kdd-dsksk-sksk-skk-sll";
 // let str1=str2.split("-");
