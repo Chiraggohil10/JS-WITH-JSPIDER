@@ -3,8 +3,13 @@ a=40;
 console.log(a);
 var a=10;
 
-//function hoisting
+//only normal function support function hoisting
 add();
 function add(params) {
-    console.log('fnction');
+    console.log('function');
 }
+
+// arrow()   //not support
+// let arrow=()=>{
+//     console.log("hello arrow");
+// }
