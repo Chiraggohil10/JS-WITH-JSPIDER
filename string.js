@@ -21,9 +21,21 @@ console.log(str[0]);
 // let str1=str.slice(0,4);
 // console.log(str1);
 
-// let str2="lorem , kdd,dsksk,sksk,skk,sll";
-// let str1=str2.split(" , ");
+// let str2="lorem-kdd-dsksk-sksk-skk-sll";
+// let str1=str2.split("-");
 // console.log(str1);
+
+
+// let str1 = "    chirag    "
+// let str2 = str1.trim();
+// let str3 = str1.trimStart();
+// let str4 = str1.trimEnd();
+// console.log(str2);
+// console.log(str3);
+// console.log(str4);
+
+
+
 
 
 // let str1=str.indexOf("a");
