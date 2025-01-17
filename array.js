@@ -10,6 +10,32 @@
 // let arr=[12,"jspider",5,null,5,true,5,undefined];
 // console.log(arr);
 
+// let mhero = ["thor","ironman","spidermane"];
+// let dchero = ["superman","flash","batman"];
+// let allhero = mhero.concat(dchero) 
+// console.log(allhero);   // [ 'thor', 'ironman', 'spidermane', 'superman', 'flash', 'batman' ]
+
+// let all = [...mhero,...dchero]
+// console.log(all);  // [ 'thor', 'ironman', 'spidermane', 'superman', 'flash', 'batman' ]
+
+
+// let arrr = [1,2,3,[4,5,6],7,[8,9,[10,11]]]
+// let arrr2 = arrr.flat(Infinity);
+// console.log(arrr2);  // [1,2,3,4,5,6,7,8,9,10,11]
+
+// console.log(Array.isArray("CHIRAG")); //false
+// console.log(Array.isArray(['chirag',23])); //true
+// console.log(Array.from("CHIRAG"));  //[ 'C', 'H', 'I', 'R', 'A', 'G' ]
+
+// let A=100;
+// let B=200;
+// let C=300;
+// console.log(Array.of(A,B,C)); //[ 100, 200, 300 ]
+
+
+
+
+
 // arr.push(20,36,"banglore")
 // console.log(arr);
 
