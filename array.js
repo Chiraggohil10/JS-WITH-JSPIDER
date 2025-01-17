@@ -82,7 +82,7 @@ let cart = [
 //     console.log(cart[i].name);    
 // }
 
-
+//foreach method is not return any value 
 // cart.forEach((i) => {
 //     console.log(i);
 // });

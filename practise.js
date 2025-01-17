@@ -49,7 +49,7 @@
 //     // console.log(cart[i].name);
 // }
 
-
+//foreach method is not return any value 
 // cart.forEach((x) => {
 //     console.log(x);
 //     // console.log(x.name);
