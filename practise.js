@@ -183,12 +183,16 @@
 
 // let a = {
 //     name: "chirag",
-//     age: 22
+//     age: 22,
+//     marks :[10,20]
 // };
 // console.log(a.name);
 // console.log(a["name"]); 
 // console.log(a.age); 
 // console.log(a["age"]);
+// console.log(a.marks[0]);
+// console.log(a["marks"][0]);
+
 
 
 

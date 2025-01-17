@@ -1,19 +1,25 @@
 //using literals
-// let student={
-//         name : "abc",
-//         marks : [10,20],
-//         phone : 1233445649,
-//         subject : {
-//             java : 100,
-//             sql : 200
-//         },
-//         email : "g@gmail.com"
-// }
+let student={
+        name : "abc",
+        marks : [10,20],
+        phone : 1233445649,
+        subject : {
+            java : 100,
+            sql : 200
+        },
+        email : "g@gmail.com"
+}
 
-//view
-// console.log(student);
-// console.log(student.name);
-// console.log(student.marks[1]);
+// view
+console.log(student);
+console.log(student.name);
+console.log(student["name"]); 
+console.log(student.marks[0]);
+console.log(student["marks"][0]);
+console.log(student.subject.sql);
+
+
+
 
 //add
 // student.age =20;
