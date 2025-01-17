@@ -46,4 +46,7 @@ console.log(`My Name Is ${new1}, My Brother Name Is ${new2}`);
 
 
 
-
+//spread rest
+const [first, ...x] = [10, 20, 30, 40];
+console.log(first); // 10
+console.log(x);  // [20, 30, 40]
