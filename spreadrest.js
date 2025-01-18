@@ -16,7 +16,7 @@
 //     return{
 //         ...x, //spread operator is used to quick copy all the key value pair of x
 //         discount:x.price*0.1,
-//         disprice:x.price+x.price*0.1
+//         disprice:x.price-x.price*0.1
 //     }
 // })
 // console.log(newcart);
