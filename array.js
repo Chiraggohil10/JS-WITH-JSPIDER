@@ -1,3 +1,9 @@
+//check the array are empty or not
+let a1=[];
+if (a1.length==0) {
+  console.log("array is empty");
+}
+
 // let arr=[12,"jspider",null,true,5,undefined];
 // console.log(arr);
 // console.log(arr.length);
@@ -124,10 +130,10 @@ let cart = [
 // })
 // console.log(newp);
 
-let newp = cart.reduce((sum, x) => {
-   return sum + x.price;
-   }, 0); 
-console.log(newp);
+// let newp = cart.reduce((sum, x) => {
+//    return sum + x.price;
+//    }, 0); 
+// console.log(newp);
 
 // let arr = [76,8,4,7,9,2]
 // let newsort = arr.sort((a,b)=>{

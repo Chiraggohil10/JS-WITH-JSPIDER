@@ -10,22 +10,26 @@ let student={
         email : "g@gmail.com"
 }
 
-console.log(Object.keys(student));      //only give key
-console.log(Object.values(student));   //only give value 
-console.log(student.hasOwnProperty("name"));  // check the existence of element give true or false
+// console.log(Object.keys(student));      //only give key
+// console.log(Object.values(student));   //only give value 
+// console.log(student.hasOwnProperty("name"));  // check the existence of element give true or false
 
-
+//check the object empty or not
+// let ob={};
+// if (Object.keys(ob).length==0) { //object.keys(ob) give the array of keys then check the length if length is 0 then object is empty
+//     console.log("object is empty");
+// }
 
 
 
 // view
-console.log(student);
-console.log(student.name);
-console.log(student["name"]); 
-console.log(student.marks[0]);
-console.log(student["marks"][0]);
-console.log(student.subject.sql);
-console.log(student["subject"]["sql"]);
+// console.log(student);
+// console.log(student.name);
+// console.log(student["name"]); 
+// console.log(student.marks[0]);
+// console.log(student["marks"][0]);
+// console.log(student.subject.sql);
+// console.log(student["subject"]["sql"]);
 
 
 
@@ -70,18 +74,18 @@ console.log(student["subject"]["sql"]);
 // console.log(j1.name);
 
 
-let obj ={
-    username : "chirag",
-    price : 999,
-    welcome : function() {
-        console.log(this.username); //refer current context // 1st time = chirag //2nd time = parth
-        console.log(this); //1st time = { username: 'chirag', price: 999, welcome: [Function: welcome] } 2nd time = { username: 'parth', price: 999, welcome: [Function: welcome] }
+// let obj ={
+//     username : "chirag",
+//     price : 999,
+//     welcome : function() {
+//         console.log(this.username); //refer current context // 1st time = chirag //2nd time = parth
+//         console.log(this); //1st time = { username: 'chirag', price: 999, welcome: [Function: welcome] } 2nd time = { username: 'parth', price: 999, welcome: [Function: welcome] }
         
-    }
-}
-obj.welcome()
-obj.username = "parth" //change the username value
-obj.welcome()
+//     }
+// }
+// obj.welcome()
+// obj.username = "parth" //change the username value
+// obj.welcome()
 
 
 

@@ -2,6 +2,14 @@ let a=20;
 let b=10;
 let c="30";
 
+// nullish coalescing operator (??) is used to assign a default value to a variable if it is null or undefined, otherwise it will assign the value to the variable
+// console.log(10 ?? 20); //10
+// console.log(null ?? 20); //20
+// console.log(undefined ?? 20); //20
+
+
+
+
 //arithmetic operator
 // console.log(a+b);
 // console.log(a+c);
