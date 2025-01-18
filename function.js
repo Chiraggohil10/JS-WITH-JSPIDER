@@ -1,4 +1,4 @@
-// //normal function
+//*******************************normal function *************************************
 // function print(){
 //     console.log("hello");
 // }
@@ -44,20 +44,29 @@
 // parent(23,43);
 
 
-
-//anonymous function
+//*******************************anonymous function *************************************
 // function(a,b) {
 //     let c=a+b;
 //     console.log(c);
 // }
 
-//immedately invoked function expression
+
+//*******************************immedately invoked function expression*************************************
+//when you have two Immediately Invoked Function Expressions (IIFEs) one after another, it is mandatory to use a semicolon to separate them
 // (function(a,b) {
 //     let c=a+b;
 //     console.log(c);
-// })(10,20);
+// })(10,20); //semicolon is mendatory here
 
-// function with expression
+// (function namediife() {
+//     console.log("hello");
+// })(); //semicolon is mendatory here
+
+// ((name)=>{
+//     console.log(name);
+// })("chirag");
+
+//*******************************function with expression*************************************
 // let add=function(a,b) {
 //     let c=a+b;
 //     console.log(c);
@@ -66,16 +75,38 @@
 // add(10,20)
 
 
-//arrow function
+//*******************************arrow function*************************************
 // let add = (a,b) => {
 //     console.log(a+b);
 // }
 // add(30,20);
+
 // let print = () => console.log("print me");
 // print();
 
+// let add = (a,b) => {
+//   return a+b;
+// }; 
+// console.log(add(30,20));
 
-//callback function
+// let add = (a,b) => a+b; 
+// console.log(add(30,20));
+
+// let add = (a,b) => (a+b); 
+// console.log(add(30,20));
+
+// let add = () => {
+//     return {username : "chirag"}
+// }
+// console.log(add());
+
+// let add = () => ({username : "chirag"})  this method use to object return more efficient in terms of code readability and conciseness.
+// console.log(add());
+
+
+
+
+//*******************************callback function*************************************
 //  console.log("line number 1");
 //  setTimeout (() => {
 //     console.log("line number 2");
@@ -98,8 +129,7 @@
 
 
 
-
-//higher order function
+//*******************************higher order function*************************************
 // function add(a,b) {
 //    return a+b;
 // }
@@ -125,7 +155,7 @@
 
 
 
-//first order function 
+//*******************************First order function*************************************
 // function add(a,b) {
 //    return a+b;
 // }
@@ -134,7 +164,7 @@
 
 
 
-//function with constructor
+//*******************************function with constructor*************************************
 // function emp(id,name,sal,hired) {
 //    this.id=id;
 //    this.name=name;

@@ -49,4 +49,15 @@
 // console.log(avg(1,2,3));
 
 
+// function calculateCart(...x) {
+//     return x;
+// }
+// console.log(calculateCart(10,20,30,40,50,60)); // [10,20,30,40,50,60]
+
+
+// function calculateCart(val1,val2,val3,...x) {
+//     return x;
+// }
+// console.log(calculateCart(10,20,30,40,50,60)); //[40,50,60]
+
 
