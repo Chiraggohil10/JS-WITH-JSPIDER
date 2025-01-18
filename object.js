@@ -70,7 +70,18 @@ console.log(student["subject"]["sql"]);
 // console.log(j1.name);
 
 
-
+let obj ={
+    username : "chirag",
+    price : 999,
+    welcome : function() {
+        console.log(this.username); //refer current context // 1st time = chirag //2nd time = parth
+        console.log(this); //1st time = { username: 'chirag', price: 999, welcome: [Function: welcome] } 2nd time = { username: 'parth', price: 999, welcome: [Function: welcome] }
+        
+    }
+}
+obj.welcome()
+obj.username = "parth" //change the username value
+obj.welcome()
 
 
 
