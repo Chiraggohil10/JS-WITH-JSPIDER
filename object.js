@@ -10,6 +10,14 @@ let student={
         email : "g@gmail.com"
 }
 
+console.log(Object.keys(student));      //only give key
+console.log(Object.values(student));   //only give value 
+console.log(student.hasOwnProperty("name"));  // check the existence of element give true or false
+
+
+
+
+
 // view
 console.log(student);
 console.log(student.name);
@@ -17,6 +25,7 @@ console.log(student["name"]);
 console.log(student.marks[0]);
 console.log(student["marks"][0]);
 console.log(student.subject.sql);
+console.log(student["subject"]["sql"]);
 
 
 
