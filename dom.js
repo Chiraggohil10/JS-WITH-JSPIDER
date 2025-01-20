@@ -46,18 +46,28 @@ img[0].src="https://i.pinimg.com/736x/d9/e1/04/d9e104948243f0f6551498112da0872a.
 img[1].src="https://i.pinimg.com/736x/d9/e1/04/d9e104948243f0f6551498112da0872a.jpg"
 img[2].src="https://i.pinimg.com/736x/d9/e1/04/d9e104948243f0f6551498112da0872a.jpg"
 img[3].src="https://i.pinimg.com/736x/d9/e1/04/d9e104948243f0f6551498112da0872a.jpg"
-img[0].style.height="200px"
-img[0].style.border="20px solid black"
-img[0].style.margin="20px 20px"
-img[1].style.height="200px"
-img[1].style.border="20px solid black"
-img[1].style.margin="20px 20px"
-img[2].style.height="200px"
-img[2].style.border="20px solid black"
-img[2].style.margin="20px 20px"
-img[3].style.height="200px"
-img[3].style.border="20px solid black"
-img[3].style.margin="20px 20px"
+// img[0].style.height="200px"
+// img[0].style.border="20px solid black"
+// img[0].style.margin="20px 20px"
+// img[1].style.height="200px"
+// img[1].style.border="20px solid black"
+// img[1].style.margin="20px 20px"
+// img[2].style.height="200px"
+// img[2].style.border="20px solid black"
+// img[2].style.margin="20px 20px"
+// img[3].style.height="200px"
+// img[3].style.border="20px solid black"
+// img[3].style.margin="20px 20px"
+
+// or
+//only using forEach beacause it is a nodelist not an array in nodelist gives only foreach attribute  
+img.forEach((x)=>{
+    x.style.height="200px"
+    x.style.border="20px solid black"
+    x.style.margin="20px 20px"
+})
+
+
 
 
 let d=document.getElementsByName("division")
