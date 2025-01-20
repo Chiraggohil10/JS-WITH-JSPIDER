@@ -77,6 +77,12 @@
 //     console.log(`value is ${arr[i]}`);
 // }
 
+// let str = "hello world"; 
+// for (const i in str) {
+//     console.log(`char is ${str[i]}`);
+// }
+
+
 //for each loop
 //for each method can't return any value
 // let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -107,6 +113,7 @@
 //     address: "mumbai",
 //   },
 // ];
+
 // obj.forEach((x) => {
 // //   console.log(x);
 //   console.log(x["name"]);
