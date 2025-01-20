@@ -26,7 +26,7 @@ function displayPhotos(response) {
     let maindiv = document.getElementById('maindiv');
     response.map((x) => {
         let div = document.createElement('div');
-        div.classList.add('photo-item'); //apply to css
+        div.className = 'photo-item'; //apply to css
 
         let images = document.createElement('img');
         images.src = x.thumbnailUrl; // src of image

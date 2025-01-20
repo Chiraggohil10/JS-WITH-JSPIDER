@@ -9,11 +9,11 @@ getData()
 function demo(data){
     let body = document.body;
     let container = document.createElement('section');
-    container.classList.add('container')
+    container.className = 'container';
     data.map((x)=>{
          let {category,title, id , price , description , image} = x;
          let div = document.createElement('div');
-         div.classList.add('item')
+         div.className = 'item';
          let img = document.createElement('img');
          img.src = image;
          let h3 = document.createElement('h3')
