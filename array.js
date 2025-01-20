@@ -1,8 +1,8 @@
 //check the array are empty or not
-let a1=[];
-if (a1.length==0) {
-  console.log("array is empty");
-}
+// let a1=[];
+// if (a1.length==0) {
+//   console.log("array is empty");
+// }
 
 // let arr=[12,"jspider",null,true,5,undefined];
 // console.log(arr);
@@ -87,6 +87,8 @@ if (a1.length==0) {
 // let a=arr.lastIndexOf(5);
 // console.log(a);
 
+
+
 //map reduce sort filter
 let cart = [
   {
@@ -108,33 +110,62 @@ let cart = [
     id: 1,
     name: "truck",
     price: 2700
+  },
+  {
+    id: 111,
+    name: "truck",
+    price: 2394
+  },
+  {
+    id: 142,
+    name: "truck",
+    price: 4694
   }
 ];
+
 // for (let i = 0; i <= cart.length-1; i++) {
 //     console.log(cart[i].name);    
 // }
+
+
 
 //foreach method is not return any value 
 // cart.forEach((i) => {
 //     console.log(i);
 // });
 
+
+//map
 // let newp = cart.map((x)=>{
 //     console.log(x.name);
 //     return x;
 // })
 // console.log(newp);
 
+
+
+//filter
 // let newp = cart.filter((x)=>{
 //     return x.price >3000;
 // })
 // console.log(newp);
 
+// let newp = cart.filter((x)=>{
+//     return x.name === "truck";
+// })
+// console.log(newp);
+
+
+
+//reduce
 // let newp = cart.reduce((sum, x) => {
 //    return sum + x.price;
 //    }, 0); 
 // console.log(newp);
 
+
+
+//sort
 // let arr = [76,8,4,7,9,2]
 // let newsort = arr.sort((a,b)=>{
 //     // return a-b; // ase
@@ -144,5 +175,54 @@ let cart = [
 // console.log(newsort);
 
 
+
+
+
+
+
+//chai aur code map reduce filter 
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,11,12,13,14,15,16,17,18,19,20];
+// let big = arr.filter((x)=>{
+//     return x > 5;
+// })
+// console.log(big);
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let big = arr.map((x)=>{
+//     // return x+10; //add 10
+//     // return x*x; //square
+//     // return x*x*x; //cube
+// })
+// console.log(big);
+
+//chaining
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let newarr = arr.map((x)=>{
+//     return x*10;
+// }).map((x)=>{
+//     return x+1;
+// }).filter((x)=>{
+//     return x >= 40;
+// })
+// console.log(newarr);
+
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let big = arr.filter((x)=>{
+//     return x > 5;
+// }).map((x)=>{
+//     return x*x;
+// })
+// console.log(big);
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let big = arr.filter((x)=>{
+//     return x > 5;
+// }).map((x)=>{
+//     return x*x;
+// }).reduce((x,sum)=>{ //x is accumulator sum is initial value
+//     return x+sum;
+// },0)
+// console.log(big);
 
 
