@@ -1,3 +1,4 @@
+/*************  ✨ Codeium Command 🌟  *************/
 let randomNumber = Math.floor(1 + Math.random() * 100); // 1 to 100
 console.log(randomNumber);
 
@@ -8,10 +9,10 @@ let remaining = document.querySelector('.lastResult');
 let lowOrHi = document.querySelector('.lowOrHi');
 let startOver = document.querySelector('.resultParas');
 
-let p = document.createElement('p');
+let p = document.createElement('button');
 
 let prevGuess = [];
-let numGuess = 1;
+let numGuess = 10; 
 
 let plaGame = true;
 
@@ -35,9 +36,9 @@ function validateGuess(guess) {
     }
     else {
         prevGuess.push(guess);
-        if (numGuess === 11) {
+        if (numGuess === 1) {
             displayGuess(guess);
-            displayMessage('Game Over. Random number was ' + randomNumber);
+            displayMessage('Game Over......Number was ' + randomNumber);
             endGame();
         }
         else {
@@ -63,8 +64,8 @@ function checkGuess(guess) {
 function displayGuess(guess) {
     userInput.value = '';
     guessSlot.innerHTML += `${guess}        `;
-    numGuess++;
-    remaining.innerHTML = `${11 - numGuess}`;
+    numGuess--;
+    remaining.innerHTML = `${numGuess}    `;
 }
 
 function displayMessage(message) {
@@ -73,8 +74,7 @@ function displayMessage(message) {
 function endGame() {
     userInput.value = '';
     userInput.setAttribute('disabled', '');
-    p.classList.add('button');
-    p.innerHTML = `<h2 id="newGame">Start New Game</h2>`;
+    p.innerHTML = `Start New Game`;
     startOver.appendChild(p);
     plaGame = false;
     newGame();
@@ -86,9 +86,9 @@ function newGame() {
         randomNumber = Math.floor(1 + Math.random() * 100);
         console.log(randomNumber);
         prevGuess = [];
-        numGuess = 1;
+        numGuess = 10;
         guessSlot.innerHTML = '';
-        remaining.innerHTML = `${11 - numGuess}    `;
+        remaining.innerHTML = `${numGuess}    `;
         userInput.removeAttribute('disabled');
         startOver.removeChild(p);
         lowOrHi.innerHTML = '';
