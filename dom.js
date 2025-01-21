@@ -108,3 +108,18 @@ function changeMode() {
         img[0].style.border="20px solid black"
     }
 }
+
+
+let btn = document.querySelector('#btn');
+
+btn.addEventListener("click", (e) => {
+  if (body.style.backgroundColor != "black") {
+    body.style.backgroundColor = "black";
+    body.style.color = "white";
+    img[0].style.border = "20px solid red";
+  } else {
+    body.style.backgroundColor = "white";
+    body.style.color = "black";
+    img[0].style.border = "20px solid black";
+  }
+});
