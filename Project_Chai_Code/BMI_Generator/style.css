@@ -1,0 +1,56 @@
+.container {
+    width: 30%;
+    background-color: #797978;
+    text-align: center;
+    position: relative;
+    left: 35%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+label {
+    font-size: 25px;
+    position: relative;
+    top: 5px;
+}
+
+#height,
+#weight {
+    padding: 10px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+}
+
+#weight-guide {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+#results {
+    font-size: 25px;
+    font-weight: bolder;
+    margin-top: 20px;
+    color: rgb(241, 241, 241);
+}
+
+button {
+    all: unset;
+    border: 2px solid #212121;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #797978;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+button:hover {
+    background-color: black;
+    color: #797978;
+    transition: 1s;
+}
+
+.container h1 {
+    padding-top: 20px;
+}
