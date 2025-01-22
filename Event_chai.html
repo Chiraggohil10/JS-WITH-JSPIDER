@@ -5,7 +5,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><big>1</big><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><big>2</big><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><big>3</big><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><big>4</big><img width="200px" id="owl"  src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li> 
+            <li><big>5</big><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><big>6</big><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
 </body>
+
+<script>
+    //first approach
+    // function eventIs() {
+    //     alert("4th Image Clicked")
+    // }
+
+    //second approach
+    // let photo = document.getElementById('photoshop');
+    // photo.onclick = function () {
+    //     alert("1st Image Clicked")
+    // }
+
+    //third approach
+    // let google = document.getElementById('japan');
+    // google.addEventListener('click', (e) => {
+    //     alert("2nd Image Clicked")
+    // },false) //false is optional but false is default context and false is event bubbling and true is event capturing
+
+
+
+    //event propagation
+    // event bubbling
+    // let image = document.getElementById('images');
+    // image.addEventListener('click', (e) => {
+    //     console.log("Images clicked");
+    // },false);
+
+    // let prayer= document.getElementById('prayer');
+    // prayer.addEventListener('click', (e) => {
+    //     console.log("5th Image clicked");
+    // },false);
+
+    //false is default context and false is event bubbling
+    //event bubbling work from bottom to top therefore it will click 5th image first then move to other images
+
+
+
+    //event capturing
+    // let image = document.getElementById('images');
+    // image.addEventListener('click', (e) => {
+    //     console.log("Images clicked");
+    // },true);
+
+    // let prayer= document.getElementById('prayer');
+    // prayer.addEventListener('click', (e) => {
+    //     console.log("5th Image clicked");
+    // },true);
+
+    //true is event capturing context and true is event capturing
+    //event capturing work from top to bottom therefore it will click other images first then move to 5th image
+
+
+
+    //stop event propagation
+    // let image = document.getElementById('images');
+    // image.addEventListener('click', (e) => {
+    //     console.log("Images clicked");
+    // },false);
+
+    // let prayer= document.getElementById('prayer');
+    // prayer.addEventListener('click', (e) => {
+    //     console.log("5th Image clicked");
+    //     e.stopPropagation(); //stop event propagation
+    // },false);
+
+
+    //prevent default
+    // let google = document.getElementById('google');
+    // google.addEventListener('click', (e) => {
+    //     e.preventDefault(); //is used to stop the default behavior of the link
+    //     console.log("Google clicked");
+    // },false);
+
+
+
+    //task click image and image will dispear
+    //1st approach
+    // let image = document.getElementById('images');
+    // image.addEventListener('click', (e) => {
+    //     let target = e.target;
+    //     if (target.tagName == "IMG") {
+    //         target.remove();
+    //     }
+    // },false);
+
+
+
+    //2nd approach
+    // let image = document.getElementById("images");
+    // image.addEventListener("click", (e) => {
+    //   if (e.target.tagName == "IMG") {
+    //     console.log(`Remove it : ${e.target.id}`);
+    //     let parent = e.target.parentNode;
+    //     parent.remove();
+    //   }
+    // });
+</script>
 </html>
+
+
+
+
+<!--
+one time watch this event
+type,timestamp,preventDefault
+target,toElement,srcElement,currentTarget
+clientX,clientY,screenX,screenY
+altKey,ctrlKey,shiftKey,keyCode 
+-->

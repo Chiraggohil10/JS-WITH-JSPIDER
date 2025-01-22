@@ -46,11 +46,13 @@
   
   .project-link {
     background-color: #fff;
-    padding: 10px 30px;
+    padding: 10px;
     border-radius: 8px;
     color: #212121;
     text-decoration: none;
     border: 2px solid red;
-    margin-top: 5px;
+    margin-top: 20px;
+    width: 260px;
+    text-align: center;
   }
   
