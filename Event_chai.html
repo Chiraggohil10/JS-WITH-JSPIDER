@@ -128,3 +128,64 @@ target,toElement,srcElement,currentTarget
 clientX,clientY,screenX,screenY
 altKey,ctrlKey,shiftKey,keyCode 
 -->
+
+<!-- type: The type of event (e.g., "click", "keydown").
+
+Example: When you press the "Enter" key, the event type is "keydown".
+
+timestamp: The time (in milliseconds) at which the event occurred.
+
+Example: If you click a button at 12:00:00, the timestamp might be something like 1609459200000.
+
+preventDefault: A method that cancels the event if it is cancelable.
+
+Example: Preventing a form from submitting when you click the "Submit" button.
+event.preventDefault();
+
+target: The element that triggered the event.
+
+Example: If you click on a paragraph, the paragraph element is the event target.
+
+toElement: The element the pointer moved to during a "mouseover" event.
+
+Example: When you move your mouse over an image, the image element is the toElement.
+
+srcElement: The element that originally triggered the event.
+
+Example: If you click on an anchor tag (<a>) inside a list item, the anchor element is the srcElement.
+
+currentTarget: The element to which the event handler is attached.
+
+Example: If an event handler is attached to a div and you click a span inside the div, the div is the currentTarget.
+
+clientX: The horizontal coordinate within the application's client area at which the event occurred (excluding scroll offset).
+
+Example: When you click 100 pixels from the left edge of the window, clientX might be 100.
+
+clientY: The vertical coordinate within the application's client area at which the event occurred (excluding scroll offset).
+
+Example: When you click 150 pixels from the top edge of the window, clientY might be 150.
+
+screenX: The horizontal coordinate within the screen at which the event occurred.
+
+Example: When you click 500 pixels from the left edge of the screen, screenX might be 500.
+
+screenY: The vertical coordinate within the screen at which the event occurred.
+
+Example: When you click 300 pixels from the top edge of the screen, screenY might be 300.
+
+altKey: A boolean indicating whether the "Alt" key was pressed when the event was triggered.
+
+Example: If you hold the "Alt" key while clicking a link, altKey will be true.
+
+ctrlKey: A boolean indicating whether the "Control" key was pressed when the event was triggered.
+
+Example: If you hold the "Control" key while clicking a checkbox, ctrlKey will be true.
+
+shiftKey: A boolean indicating whether the "Shift" key was pressed when the event was triggered.
+
+Example: If you hold the "Shift" key while clicking a button, shiftKey will be true.
+
+keyCode: A number representing the key that was pressed during a keyboard event.
+
+Example: If you press the "A" key, the keyCode will be 65. -->
